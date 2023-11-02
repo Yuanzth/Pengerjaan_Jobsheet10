@@ -4,11 +4,12 @@ public class BioskopWithScanner02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int baris, kolom;
+        int baris, kolom, loop;
         String nama, next;
         String[][] penonton = new String[4][2];
 
-        while (true) {
+        loop = 0;
+        while (loop == 0) {
             System.out.println("Menu:");
             System.out.println("1. Input data penonton");
             System.out.println("2. Tampilkan daftar penonton");
@@ -62,8 +63,8 @@ public class BioskopWithScanner02 {
 
                 case 3:
                     System.out.println("Terima kasih. Program selesai.");
-                    System.exit(0);
-
+                    loop = 1;
+                    break;
                 default:
                     System.out.println("Menu tidak valid. Silakan pilih menu yang sesuai.");
             }
