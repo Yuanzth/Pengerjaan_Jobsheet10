@@ -29,6 +29,6 @@ public static void main(String[] args) {
     {
         System.out.println("Penonton pada baris ke-"+(i+1)+": " + String.join(", ", penonton[i]));
     }
-}
     
+}
 }
